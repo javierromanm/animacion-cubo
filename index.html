@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animación cubo</title>
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+		
+
+		}
+
+		.cubo {
+			position: relative;
+			margin: 100px auto;
+			transform: perspective(700px) rotateX(30deg) rotateY(-30deg);
+			transform-style: preserve-3d;
+			transition-property: transform;
+			transition-duration: 3000ms;
+		}
+
+		.cubo:hover {
+			transform: perspective(700px) rotateX(70deg) rotateY(-70deg);
+			
+		}
+
+		.cara {
+			position: absolute;
+			transform: rotate(90deg) translateZ(100px);
+		}
+
+		#superior {
+			background-color: blue;
+			transform: rotateX(90deg) translateZ(100px);
+		}
+		
+		#frente {
+			background-color: limegreen;
+			transform: translateZ(100px);
+
+		}
+
+		#atras {
+			background-color: firebrick;
+			transform: translateZ(-100px);
+
+		}
+
+		#derecha {
+			background-color: orange;
+			transform: rotateY(90deg) translateZ(100px);
+
+		}
+
+		#izquierda {
+			background-color: yellow;
+			transform: rotateY(-90deg) translateZ(100px);
+		}
+
+
+		#inferior {
+			background-color: olive;
+			transform: rotateX(-90deg) translateZ(100px);
+		}
+
+	</style>
+	
+</head>
+<body>
+	
+	
+	<div class="cubo" id="cubo">
+		<div class="cara" id="superior"></div>
+		<div class="cara" id="frente"></div>
+		<div class="cara" id="derecha"></div>
+		<div class="cara" id="izquierda"></div>
+		<div class="cara" id="atras"></div>
+		<div class="cara" id="inferior"></div>
+	</div>
+
+	
+	
+</body>
+</html>
