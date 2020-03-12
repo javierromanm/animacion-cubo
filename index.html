@@ -7,7 +7,6 @@
 		div {
 			width: 200px;
 			height: 200px;		
-
 		}
 
 		.cubo {
@@ -20,8 +19,7 @@
 		}
 
 		.cubo:hover {
-			transform: perspective(700px) rotateX(70deg) rotateY(-70deg);
-			
+			transform: perspective(700px) rotateX(70deg) rotateY(-70deg);			
 		}
 
 		.cara {
@@ -37,19 +35,16 @@
 		#frente {
 			background-color: limegreen;
 			transform: translateZ(100px);
-
 		}
 
 		#atras {
 			background-color: firebrick;
 			transform: translateZ(-100px);
-
 		}
 
 		#derecha {
 			background-color: orange;
 			transform: rotateY(90deg) translateZ(100px);
-
 		}
 
 		#izquierda {
@@ -61,13 +56,9 @@
 			background-color: olive;
 			transform: rotateX(-90deg) translateZ(100px);
 		}
-
-	</style>
-	
+	</style>	
 </head>
-
-<body>
-	
+<body>	
 	<div class="cubo">
 		<div class="cara" id="superior"></div>
 		<div class="cara" id="frente"></div>
@@ -75,7 +66,6 @@
 		<div class="cara" id="izquierda"></div>
 		<div class="cara" id="atras"></div>
 		<div class="cara" id="inferior"></div>
-	</div>
-	
+	</div>	
 </body>
 </html>
